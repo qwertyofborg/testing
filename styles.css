@@ -129,6 +129,11 @@ p {
     .caption h1 {
         font-size: 4.3em;
     }
+    .wideImage:hover .caption,
+    .boxImage:hover .caption {
+        background: rgba(34, 34, 34, 0.75);
+        transform: translate(0, -29px);
+    }
     p {
         font-size: 3em;
         height: 42px;
