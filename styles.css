@@ -105,7 +105,12 @@ p {
     color: white;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+    }
     .wideImage img {
         content: url(images/mountain1.png);
     }
