@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+    color: #CCCCCC;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #090909 0%, #000000 100%);
+}
+
+header {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 1.2em;
+}
+
+p {
+    height: 32px;
+    width: 320px;
+    padding-right: 40px;
+    transition: 1.2s ease;
+    visibility: hidden;
+}
+
+
+/*
+.wideImage img {
+    content: url("images/pexels-photo-25429.jpg");
+}*/
+
+.wideImage,
+.boxImage {
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.boxImage {
+    justify-content: flex-end;
+    width: 320px;
+}
+
+.wideImage img,
+.boxImage img {
+    border: 1px solid #737373;
+    /*Fixes scaling, and border issues*/
+    height: 100%;
+    width: 100%;
+    /*Scaling controller*/
+    max-height: 100%;
+    max-width: 100%;
+    transition: 15s ease;
+    z-index: 0;
+}
+
+
+/*Scale images on hover*/
+
+.wideImage:hover img,
+.boxImage:hover img {
+    transform: scale(1.1);
+}
+
+
+/*Scale text on hover*/
+
+.wideImage:hover .caption,
+.boxImage:hover .caption {
+    background: rgba(34, 34, 34, 0.75);
+    transform: translate(0, -26px);
+}
+
+.wideImage:hover .caption p,
+.boxImage:hover .caption p {
+    visibility: visible;
+}
+
+.caption {
+    font-size: .9em;
+    text-transform: uppercase;
+    padding-left: 6px;
+    position: relative;
+    bottom: 3em;
+    transition: 1.2s ease-out;
+    width: 320px;
+    z-index: 1;
+}
+
+.caption h1 {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .wideImage img {
+        content: url(images/mountain1.png);
+    }
+    main {
+        width: 320px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        height: 34px;
+    }
+    .caption h1 {
+        font-size: 26px;
+    }
+}

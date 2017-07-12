@@ -1,105 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume 2</title>
-    <script type="text/javascript" script-name="coda" src="http://use.edgefonts.net/coda.js"></script>
-    <link rel="stylesheet" href="css/resume2.css">
+    <title>Image Zoom Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Lorem Ipsum</h1>
-
-        <ul>
-            <li>email: li@something.com</li>
-            <li>twitter: @LoremIpsum</li>
-            <li>Location: The Moon</li>
-        </ul>
-
+        <h1>Test Image Gallery</h1>
     </header>
-
-    <section>
-        <div id="work">
-            <table id="workTable">
-                <tr>
-                    <th colspan="2">
-                        Work Experience
-                    </th>
-                </tr>
-                <tr>
-                    <td><span class="workYear">2000</span></td>
-                    <td>
-                        <span class="workName">Place of Work 1</span>
-                        <br> <span class="jobTitle">Coffe Getter</span>
-                        <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque necessitatibus cum quidem atque in deleniti iusto similique molestiae a.
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td><span class="workYear">2005</span></td>
-                    <td> <span class="workName">Place of Work 2</span>
-                        <br> <span class="jobTitle">Penguin Wrangler</span>
-                        <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque necessitatibus cum quidem atque in deleniti iusto similique molestiae a.
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><span class="workYear">2010</span></td>
-                    <td><span class="workName">Place of Work 3</span>
-                        <br><span class="jobTitle">Crazy Person</span>
-                        <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque necessitatibus cum quidem atque in deleniti iusto similique molestiae a.
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <figure>
-            <img src="images/penguin.png" alt="penguin" title="userPhoto" width=150>
-            <figcaption>Me on a good day</figcaption>
-        </figure>
-        <div id="sideBar">
-            <div id="education">
-                <h2>Education</h2>
-                <h4>A nice School</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sapiente cupiditate magni libero, debitis mollitia.
-                </p>
-                <h4>edx.org</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi praesentium, repudiandae. Sunt inventore nobis sed, ab mollitia.</p>
-            </div>
-
-            <div id="objective">
-                <h2>Objective</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nesciunt ipsam, voluptatem, natus, officiis eligendi aperiam sint quo dicta odio at veritatis illum ea excepturi dolor enim maiores possimus commodi.
-                </p>
+    <main>
+        <div class="wideImage">
+            <img src="images/pexels-photo-25429.jpg" alt="valley with mountains in background" title="Valley Village">
+            <div class="caption">
+                <h1>Mountain Range</h1>
+                <p>Beautiful mountain valley village.</p>
             </div>
         </div>
 
+        <div class="boxImage left">
+            <img src="images/pexels-photo-26705.jpg" alt="mountain range" title="Mountina Range">
+            <div class="caption">
+                <h1>Moutain Valley</h1>
+                <p></p>
+            </div>
+        </div>
 
-    </section>
+        <div class="boxImage right">
+            <img src="images/mario-luigi-figures-funny-163114.jpg" alt="mountain range" title="Mountina Range">
+            <div class="caption">
+                <h1>Mario & Luigi</h1>
+                <p>Just a couple figures of the brothers Mario.</p>
+            </div>
+        </div>
 
-    <section>
-        <article id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-            </ul>
-        </article>
-    </section>
+        <div class="boxImage left">
+            <img src="images//pexels-photo-416059.jpg" alt="town in water" title="Venice">
+            <div class="caption">
+                <h1>Bay town</h1>
+                <p>Old town on the water front</p>
+            </div>
+        </div>
+        <div class="boxImage right">
+            <img src="images/pexels-photo-460675.jpg" alt="light bulb" title="Light bulb">
+            <div class="caption">
+                <h1>Light bulb</h1>
+                <p>It glows!!</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        Contact me on: <a href="#">Twitter</a>, <a href="#">LinkedIn</a>, <a href="#">Facebook</a>
+        Legal mumbo jumbo and/or contact info here
     </footer>
+
 
 </body>
 
