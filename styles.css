@@ -132,8 +132,8 @@ p {
     p {
         font-size: 1.5em;
         height: 42px;
-        width: 420px;
-        padding-right: 40px;
+        width: 640px;
+        padding-right: 5px;
         transition: 1.2s ease;
         visibility: hidden;
     }
