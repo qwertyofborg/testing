@@ -105,7 +105,7 @@ p {
     color: white;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 700px) {
     main {}
     .wideImage img {
         content: url(images/mountain1.png);
@@ -121,12 +121,20 @@ p {
         width: 640px;
     }
     h1 {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
-    p {
-        height: 34px;
+    .caption {
+        width: 420px;
     }
     .caption h1 {
-        font-size: 26px;
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1.2em;
+        height: 42px;
+        width: 420px;
+        padding-right: 40px;
+        transition: 1.2s ease;
+        visibility: hidden;
     }
 }
