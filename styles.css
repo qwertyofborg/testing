@@ -124,6 +124,7 @@ p {
         font-size: 1.8em;
     }
     .caption {
+        bottom: 4em;
         width: 640px;
     }
     .caption h1 {
