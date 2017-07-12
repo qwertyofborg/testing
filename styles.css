@@ -105,17 +105,20 @@ p {
     color: white;
 }
 
-@media only screen and (max-device-width: 700px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        flex-flow: column wrap;
-    }
+@media only screen and (max-device-width: 800px) {
+    main {}
     .wideImage img {
         content: url(images/mountain1.png);
     }
     main {
-        width: 320px;
+        flex-direction: column;
+        flex-flow: row wrap;
+        width: 740px;
+    }
+    .boxImage,
+    .wideImage {
+        justify-content: flex-start;
+        width: 640px;
     }
     h1 {
         font-size: 1.2em;
